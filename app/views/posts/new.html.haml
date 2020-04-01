@@ -1,0 +1,8 @@
+.contents.row
+  = form_tag('/posts', method: :post) do
+    %h3
+      投稿する
+    %input{name: "name", placeholder: "ニックネーム", type: "text"}/
+    %input{name: "video", placeholder: "オススメVtuber動画のURL", type: "text"}/
+    %textarea{cols: "30", name: "text", placeholder: "動画のオススメポイントなど", rows: "10"}
+    %input{type: "submit", value: "SENT"}/
